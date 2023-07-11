@@ -2,14 +2,49 @@
 
 <head>
     <link href="styles.css" rel="stylesheet" />
-    <title>Space Tube</title>
+    <link href="stars.css" rel="stylesheet" />
+    <title>Space Tube: Life Is Better In Tubes</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
 <body>
-    <h1 id="saucer">🛸</h1>
-    <a href="https://write.as/king-mob/introducing-space-tube-or-finally-the-world-shall-recognise-my-important-ideas">
-        <p>read the intro blog</p>
-    </a>
+    <script>
+        const alienSpeech = new Audio('alien-voice.mp3');
+        function playAlienSpeech() {
+            alienSpeech.play();
+        }
+        function lightUp() {
+            const saucer = document.getElementById("saucer");
+            saucer.classList.add("light-up");
+            setTimeout(() => { saucer.classList.remove("light-up") }, 1000);
+        }
+    </script>
+    <h1 id="saucer" onclick="playAlienSpeech();lightUp();">🛸</h1>
+    <p class="star" id="star1">⭐</p>
+    <p class="star" id="star2">⭐</p>
+    <p class="star" id="star3">⭐</p>
+    <p class="star" id="star4">⭐</p>
+    <p class="star" id="star5">⭐</p>
+    <p class="star" id="star6">⭐</p>
+    <p class="star" id="star7">⭐</p>
+    <p class="star" id="star8">⭐</p>
+    <div id="background"></div>
+    <div id="centre">
+        <h1 id="title">Space Tube</h1>
+        <p>Life is better in tubes.</p>
+        <p>
+            <a
+                href="https://write.as/king-mob/introducing-space-tube-or-finally-the-world-shall-recognise-my-important-ideas">
+                Read the introduction post
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/King-Mob/space-tube-app-service">
+                Check out the github repo
+            </a>
+        </p>
+        <p>Get started!</p>
+    </div>
 </body>
 
 </html>

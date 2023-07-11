@@ -1,3 +1,107 @@
+@font-face {
+  font-family: Astropolis;
+  src: url(Astropolis.ttf);
+}
+
+body {
+  margin: 0;
+  font-size: 1vh;
+  background: #101010;
+}
+
 #saucer {
   font-size: 200px;
+  top: 0%;
+  position: absolute;
+  animation: fly 8s infinite linear;
+  cursor: pointer;
+}
+
+@keyframes fly {
+  0% {
+    font-size: 50px;
+    left: 42%;
+    z-index: -1;
+  }
+  25% {
+    font-size: 100px;
+    top: 0%;
+    left: 10%;
+    z-index: 1;
+  }
+  50% {
+    font-size: 200px;
+    top: -5%;
+    left: 42%;
+    z-index: 1;
+  }
+  74% {
+    font-size: 100px;
+    top: 0%;
+    left: 75%;
+    z-index: 1;
+  }
+  75% {
+    font-size: 100px;
+    left: 75%;
+    z-index: -1;
+  }
+  100% {
+    font-size: 50px;
+    left: 42%;
+    z-index: -1;
+  }
+}
+
+.light-up {
+  filter: drop-shadow(0 0 3rem blue);
+}
+
+#background {
+  position: absolute;
+  z-index: -2;
+  background-color: #ffffff;
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+}
+
+#centre {
+  position: absolute;
+  z-index: 0;
+  background-color: #101010;
+  opacity: 0.9;
+  backdrop-filter: blur(5px);
+  color: #f0f0f0;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+}
+
+#centre a {
+  color: #f0f0f0;
+}
+
+#centre h1 {
+  font-size: 5rem;
+  font-family: Astropolis;
+  animation: glow 4s infinite;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 0.25rem green);
+  }
+  50% {
+    filter: drop-shadow(0 0 1.1rem green);
+  }
+  100% {
+    filter: drop-shadow(0 0 0.25rem green);
+  }
+}
+
+#centre p {
+  font-size: 2rem;
+  font-family: monospace;
 }
