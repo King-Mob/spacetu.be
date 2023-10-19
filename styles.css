@@ -5,8 +5,14 @@
 
 body {
   margin: 0;
-  font-size: 1vh;
+  font-size: 2vh;
   background: #101010;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 1vh;
+  }
 }
 
 #saucer {
@@ -23,12 +29,12 @@ body {
     left: 42%;
     z-index: -1;
   }
-  24%{
-    z:index:-1;
+  24% {
+    z-index: -1;
     font-size: 100px;
     top: 0%;
     left: 10%;
-}
+  }
   25% {
     font-size: 100px;
     top: 0%;
@@ -67,9 +73,16 @@ body {
   position: absolute;
   z-index: -2;
   background-color: #ffffff;
-  width: 50%;
+  width: 100%;
+  margin-left: 0%;
   height: 100%;
-  margin-left: 25%;
+}
+
+@media screen and (min-width: 600px) {
+  #background {
+    width: 50%;
+    margin-left: 25%;
+  }
 }
 
 #centre {
@@ -80,9 +93,16 @@ body {
   backdrop-filter: blur(5px);
   color: #f0f0f0;
   text-align: center;
-  width: 50%;
+  width: 100%;
+  margin-left: 0%;
   height: 100%;
-  margin-left: 25%;
+}
+
+@media screen and (min-width: 600px) {
+  #centre {
+    width: 50%;
+    margin-left: 25%;
+  }
 }
 
 #centre a {
@@ -107,7 +127,30 @@ body {
   }
 }
 
-#centre p {
+#centre h2 {
   font-size: 2rem;
   font-family: monospace;
+}
+
+#centre p {
+  font-size: 1.5rem;
+  font-family: monospace;
+  padding: 0rem 1rem;
+}
+
+input {
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin: 0rem 0.5rem;
+  animation: glow 2s infinite;
+}
+
+#subscribe {
+  cursor: pointer;
+  background-color: green;
+}
+
+#powered-by {
+  font-size: 1rem !important;
+  margin-top: 0rem;
 }
