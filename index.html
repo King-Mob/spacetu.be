@@ -5,6 +5,7 @@
     <link href="stars.css" rel="stylesheet" />
     <title>Space Tube: Life Is Better In Tubes</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
@@ -28,13 +29,14 @@
     <p class="star" id="star6">⭐</p>
     <p class="star" id="star7">⭐</p>
     <p class="star" id="star8">⭐</p>
-    <div id="background"></div>
     <div id="centre">
         <h1 id="title">Space Tube</h1>
         <h2>Life is better in tubes.</h2>
         <p>Space Tube is a group-to-group chat tool that plugs into your existing group chat and links you to other
             groups. The space is your chat group and the tubes are the connections to other groups.</p>
-        <p>Get started!</p>
+        <a href="https://spacetube.spacetu.be">
+            <p>Get started!</p>
+        </a>
         <p>
             <a
                 href="https://write.as/king-mob/introducing-space-tube-or-finally-the-world-shall-recognise-my-important-ideas">
@@ -46,17 +48,10 @@
                 Check out the github repo
             </a>
         </p>
-        <form action="https://tinyletter.com/spacetube" method="post" target="popupwindow"
-            onsubmit="window.open('https://tinyletter.com/spacetube', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-            <p><label for="tlemail">Sign up for updates!</label></p>
-            <br />
-            <input type="text" placeholder="email address" name="email" id="tlemail" />
-            <input type="hidden" value="1" name="embed" />
-            <input type="submit" value="Subscribe" id="subscribe" />
-            <a href="https://tinyletter.com" target="_blank">
-                <p id="powered-by">powered by TinyLetter</p>
-            </a>
-        </form>
+        <p>Sign up for updates!</p>
+        <br />
+        <input type="text" placeholder="email address" name="email" id="tlemail" />
+        <input type="submit" value="Subscribe" id="subscribe" />
     </div>
 </body>
 
