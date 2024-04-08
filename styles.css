@@ -132,3 +132,11 @@ input {
   background-color: green;
   color: #ffffff;
 }
+
+img {
+  width: 100%;
+}
+
+#introduction {
+  width: 100%;
+}
