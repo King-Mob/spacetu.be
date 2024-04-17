@@ -52,37 +52,20 @@
             body.append(starElement);
         })
     </script>
-    <h1 id="saucer" onclick="playAlienSpeech();lightUp();">🛸</h1>
-    <div id="centre">
-        <h1 id="title">Spacetube</h1>
-        <h2>Life is better in tubes.</h2>
-        <p>Spacetube is a group-to-group chat tool built on top of <a href="https://matrix.org">Matrix</a>, a secure
-            decentralised communication protocol.
-        </p>
-        <p>
-            Spacetube lets you open a channel to other groups from your chat platform, so you can
-            talk to your own group and outside groups in the same way.
-        </p>
-        <p>
-            <a href="https://spacetube.spacetu.be">Get started</a>
-            or check out the
-            <a href="https://github.com/King-Mob/space-tube-app-service">github repo</a>
-        </p>
-        <h2>Read an intro:</h2>
-        <ul>
-            <li>
-                <p><a href="./new.html">New to Matrix</a> (intro to Matrix)</p>
-            </li>
-            <li>
-                <p><a href="./current.html">Used Matrix before</a> (what spacetube does)</p>
-            </li>
-            <li>
-                <p><a href="./magician.html">Matrix Magicians</a> (self-hosting and more)</p>
-            </li>
-        </ul>
-        <br />
-        <p id="join">Join the conversation <a href="https://matrix.to/#/#space-tube-public:spacetu.be">on Matrix</a></p>
-    </div>
+    <div id="centre"></div>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+    <script>
+        const converter = new showdown.Converter();
+
+        fetch("./content/new.md").then(res => res.text()).then(res => {
+            const introContent = converter.makeHtml(res);
+            const container = document.createElement("div");
+            container.innerHTML = introContent;
+
+            const centre = document.getElementById("centre");
+            centre.append(container);
+        });
+    </script>
 </body>
 
 </html>

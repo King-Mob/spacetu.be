@@ -78,6 +78,9 @@ body {
   width: 100%;
   margin-left: 0%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -112,15 +115,29 @@ body {
 #centre h2 {
   font-size: 2rem;
   font-family: monospace;
+  margin-top: 0rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: monospace;
+  margin-top: 0rem;
 }
 
 #centre p {
   font-size: 1.5rem;
   font-family: monospace;
   padding: 0rem 1rem;
+  margin-top: 0rem;
 }
 
-input {
+#join {
+  color: green;
+  animation: glow 2s infinite;
+}
+
+input,
+#subscribe {
   font-family: monospace;
   font-size: 1.5rem;
   margin: 0rem 0.5rem;
@@ -128,9 +145,11 @@ input {
 }
 
 #subscribe {
+  margin-top: 0.5rem;
   cursor: pointer;
   background-color: green;
   color: #ffffff;
+  border: none;
 }
 
 img {
@@ -139,4 +158,13 @@ img {
 
 #introduction {
   width: 100%;
+}
+
+a,
+ul,
+li {
+  width: fit-content;
+  margin-top: 0rem;
+  font-family: monospace;
+  font-size: 1.5rem;
 }
