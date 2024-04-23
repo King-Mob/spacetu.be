@@ -170,6 +170,8 @@ input,
 
 img {
   width: 100%;
+  border: solid 2px white;
+  border-radius: 5px;
 }
 
 #introduction {
