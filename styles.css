@@ -174,8 +174,9 @@ img {
   border-radius: 5px;
 }
 
-video {
-  width: 100%;
+iframe {
+  width: 28rem;
+  height: 20rem;
 }
 
 #introduction {
