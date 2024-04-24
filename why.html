@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="stars.css" rel="stylesheet" />
+    <title>Spacetube: Life Is Better In Tubes</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body id="body">
+    <script>
+        const alienSpeech = new Audio('alien-voice.mp3');
+        function playAlienSpeech() {
+            alienSpeech.play();
+        }
+        function lightUp() {
+            const saucer = document.getElementById("saucer");
+            saucer.classList.add("light-up");
+            setTimeout(() => { saucer.classList.remove("light-up") }, 1000);
+        }
+
+        const randomXY = () => {
+            return {
+                x: Math.round(Math.random() * 90) + 5,
+                y: Math.round(Math.random() * 90) + 5,
+            };
+        };
+
+        const stars = [
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+            randomXY(),
+        ];
+
+        stars.forEach(star => {
+            const starElement = document.createElement("p");
+            starElement.classList.add("star");
+            starElement.style.left = `${star.x}%`;
+            starElement.style.top = `${star.y}%`;
+            starElement.textContent = "⭐";
+            const body = document.getElementById("body");
+            body.append(starElement);
+        })
+    </script>
+    <div id="centre"></div>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+    <script>
+        const converter = new showdown.Converter();
+
+        fetch("./content/why.md").then(res => res.text()).then(res => {
+            const introContent = converter.makeHtml(res);
+            const container = document.createElement("div");
+            container.innerHTML = introContent;
+
+            const centre = document.getElementById("centre");
+            centre.append(container);
+        });
+    </script>
+</body>
+
+</html>

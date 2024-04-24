@@ -80,5 +80,3 @@ Realistically, this is as far as most people need to go. You're using spacetube 
 Say hello on #spacetube-public:spacetu.be
 
 [Learn more](./why.html) about the motivations behind creating spacetube.
-
-If you want to go deeper, you can be initiated into the mysteries of the [Matrix Magician](./magician.html).
