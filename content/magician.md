@@ -1,8 +1,6 @@
 # Matrix Magician
 
-Matrix is a capable of many weird and wonderful things.
-
-Spacetube is a app-service that uses custom events to create a communication structure.
+Matrix is a powerful data structure that the clients don't represent properly.
 
 ## Self-Hosting
 
@@ -23,5 +21,6 @@ route spacetube.yourdomain to 8134
 
 ## Future Improvements
 
+Custom events
 
 help develop the software

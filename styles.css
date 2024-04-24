@@ -174,11 +174,14 @@ img {
   border-radius: 5px;
 }
 
+<<<<<<< HEAD
 iframe {
   width: 28rem;
   height: 20rem;
 }
 
+=======
+>>>>>>> parent of a3979cc (add intro video)
 #introduction {
   width: 100%;
 }
@@ -190,19 +193,4 @@ li {
   margin-top: 0rem;
   font-family: monospace;
   font-size: 1.5rem;
-}
-
-#centre.video-container {
-  width: 100%;
-}
-
-@media screen and (min-width: 600px) {
-  #centre.video-container {
-    width: 80%;
-    margin-left: 10%;
-  }
-}
-
-h2 a {
-  font-size: 2rem;
 }
