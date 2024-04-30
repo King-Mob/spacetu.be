@@ -174,9 +174,9 @@ img {
   border-radius: 5px;
 }
 
-iframe {
-  width: 28rem;
-  height: 20rem;
+video {
+  width: 100%;
+  max-width: 800px;
 }
 
 #introduction {
@@ -194,4 +194,11 @@ li {
 
 h2 a {
   font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  #centre.video-container {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
