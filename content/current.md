@@ -4,79 +4,125 @@ Spacetube assumes you have a group that uses matrix and you want to talk to anot
 
 You're going to use spacetube to send messages back and forth from your group to another.
 
-There are two ways to do this:
+## Simple Set-Up
 
-1. Using the spacetube web app ([spacetube.spacetu.be](spacetube.spacetu.be) is the default instance)
-2. Using your matrix client ([app.element.io](app.element.io) if you're coming from the previous doc)
+There are 3 steps to using space tube:
 
-The web app is more visual, and the matrix client method uses bot commands. If you want to use spacetube in an existing room then you need to use the matrix client.
+Create your group user.
+Connect to another group.
+Send messages.
+
+All 3 steps can be done either on the spacetube web app ([spacetube.spacetu.be](spacetube.spacetu.be) is the default instance) or through matrix ([app.element.io](app.element.io) if you're coming from the [previous doc](./new.html)). You can also switch from one to the other later on, so don't worry about being locked in to one approach.
+
+The [web instructions](./current.html#spacetubewebapp) are first and then the [matrix instructions](./current.html#matrixclient) are below.
 
 ## Spacetube Web App
 
 Open the [spacetube web interface](https://spacetube.spacetu.be). 
 
-1. Enter your matrix id and the name of your group. If you know the recipient's matrix user id, then include that as well. ![creating a tube](./content/spacetube-create.jpg)
+### Creating A Group User
 
-2. Copy the link and share it with your contact. ![spacetube link](./content/spacetube-copy.jpg)
+This is the first step. Your group user represents and speaks on behalf of your group.
 
-3. When they've accepted the link, the tube will show up as available on the home page and going on the link will show the messaging interface.
+1. Enter your group name under Create Group User ![group name](./content/images/web-1.jpg)
+2. Click "Create". ![group creation](./content/images/web-2.jpg)
 
-From the contact point of view:
+The group user has been created! 
 
-1. This is what they'll see when they go on it. ![spacetube contact creating](./content/spacetube-other-create.jpg)
+Now you can either continue on the web, or take the group user id to the matrix instructions.
 
-2. When they click, it'll ask them to wait. ![spactube contact creating and waiting](./content/spacetube-other-create-wait.jpg)
+### Connect With Other Groups
 
-3. Then take them to the messaging screen ![spacetube messaging](./content/spacetube-other-message-new.jpg)
+Here we use the group user created in the previous step to connect with another group.
 
-The messaging interface:
+1. After creating your group user, enter your name to get an invite link ![enter your name](./content/images/web-3.jpg)
+![invite link created](./content/images/web-4.jpg)
+2. Share the invite link with your contact
+3. Click the link to your room and wait for it to be open ![waiting to open](./content/images/web-13.jpg)
 
-1. Invite your other group members using the (🧍+) button ![spacetube invites](./content/spacetube-other-message-invite.jpg)
+Your contact now needs to:
 
-2. Send a message to your group using the input at the bottom ![spacetube send a message](./content/spacetube-other-message-sent.jpg)
+1. Follow the link ![follow invite link](./content/images/web-5.jpg)
+2. Enter their name and their group's name ![enter invite details](./content/images/web-6.jpg)
+3. Click Accept Invite ![accept invite](./content/images/web-7.jpg)
+ ![see messaging screen](./content/images/web-8.jpg)
 
-3. Forward a message to the other group by clicking on the message you want to forward ![spacetube forward message](./content/spacetube-other-message-forward.jpg)
+### Send A Message
 
-4. It should appear in a few seconds. ![spacetube forward message](./content/spacetube-other-message-forward-sent.jpg)
+You should be looking at a messaging screen.
 
-5. See a reply from the other group ![spacetube reply](./content/spacetube-other-message-reply.jpg)
+1. Type a message in the field and press send.  ![see messaging screen](./content/images/web-8.jpg)
+2. Click on the message to forward it. ![see messaging screen](./content/images/web-9.jpg)
 
-You are now doing group to group communication!
+The message will be forwarded.
 
-## Matrix Client
+### Changing Group Display Name and Picture
 
-Open your matrix client e.g. [Element](https://app.element.io)
+1. Click on the mask icon to go to the page that changes your group user's profile ![profile edit](./content/images/web-12.jpg)
+2. Enter a new name and/or upload a new profile pic
+3. Press save
 
-1. Select or create the matrix room you want to use spacetube in. A spacetube room CAN'T be end-to-end encrypted, but it can be private. ![element room creation](./content/element-newroom.jpg)
-2. Change the name of the matrix room to the name of your group. This is how spacetube knows what to call the user representing your group. You can change it to something else after you've forwarded your first message. ![element room options](./content/element-room-options.jpg)
-![element room settings](./content/element-room-settings.jpg)
-3. Invite spacetube-bot, by entering the user id @space-tube-bot:spacetu.be. If it says "user may not exist" click invite anyway. ![invite spacetube bot](./content/element-invite-spacetubebot.jpg)
-4. Send "!spacetube create" ![spacetube create command](./content/element-spacetube-create.jpg)
-5. Copy the connection code and send it to your contact. In the picture above the connection code is "9380bd37-1a78-4a8d-8e90-a5d5d6080c1d~@space-tube-bot:spacetu.be"
-6. Have your contact send "!spacetube connect insert-connection-code-here"  ![spacetube connect command](./content/element-spacetube-connect.jpg)
-7. Spacetubebot says the tube is open
-8. Send "!spacetube forward hello" ![spacetube forward command](./content/element-spacetube-forward.jpg)
+### Going from web to matrix client
 
-You are now doing group to group communication!
+1. Get your matrix id from your client, by clicking on your profile, then settings ![get matrix id](./content/images/matrix-14.jpg)
+2. Click the (🧍+) invite button on the web messaging screen 
+3. Enter the id you want to invite ![invite matrix id](./content/images/web-11.jpg)
+4. Go on the client and accept the invite
 
-## From Client to Web App
+You're in.
 
-If you want to use the web app to see your matrix room and have a more visual experience, then this is possible, by using the "!spacetube link" command.
+## Matrix client
 
-![spacetube link command](./content/element-spacetube-link.jpg)
+Open your matrix client
 
-The link will have a token a nickname in it. The nickname is set when you first join.
+### Creating A Group User
 
-This is what you see if you follow the link:
+0. Ensure your room is not end-to-end encrypted when creating it ![room creation](./content/images/matrix-3.jpg)
+1. Invite @space-tube-bot:spacetu.be to your chat ![invite space tube bot](./content/images/matrix-5.jpg)
+![space tube bot joins](./content/images/matrix-6.jpg)
+2. Send "@space-tube-bot create" to create a group user ![space tube bot create](./content/images/matrix-7.jpg)
+3. Invite the user id that spacetube gave you, or the matrix id you got from the web app in the web instructions above. ![invite group user](./content/images/matrix-8.jpg)
+ ![group user joins](./content/images/matrix-9.jpg)
 
-![spacetube follow link](./content/element-spacetube-link-followed.jpg)
+The group user has joined the chat! It will share with you another matrix id, that we call the invite id. This is what you give to other groups to create the connections. They don't invite your group user directly, they invite this invite id.
 
-On the left is the conversation in your matrix room and on the right is the conversation that's being forwarded through spacetube.
+### Connect With Other Groups
+
+Here we use the group user created in the previous step to connect with another group.
+
+1. After inviting the group user, it will give you an invite id to share with your contact ![group user joins](./content/images/matrix-9.jpg)
+2. Send your contact this id. When they invite it and send a message, the connection will open
+
+Your contact now needs to:
+
+1. Invite the id they received from you ![invite the user](./content/images/matrix-10.jpg)
+
+### Send A Message
+
+1. Send a message with @other-group-name at the start ![send a message](./content/images/matrix-11.jpg)
+
+The message will show up in your chat and theirs as being from your group.
+
+### Changing Group Display Name and Picture
+
+1. Send a message that says `@my-group profile` to get the link for editing the profile ![request edit profile link](./content/images/matrix-13.jpg)
+2. Click the link.
+3. Enter a new name and/or upload a new profile pic ![profile edit](./content/images/web-12.jpg)
+4. Press save
+
+### Going from matrix client to web
+
+1. Send `@my-group link` to get a link to the web app ![request group link](./content/images/matrix-12.jpg)
+2. Click the link
+
+You're in.
 
 ## What Next?
 
+You have just done group to group communication!
+
 Realistically, this is as far as most people need to go. You're using spacetube to send messages. Your group is already light years into the future!
 
-Say hello on #spacetube-public:spacetu.be
+Say hello and talk about possible improvements on [the spacetube public chat](https://matrix.to/#/#spacetube-public:spacetu.be).
 
 [Learn more](./why.html) about the motivations behind creating spacetube.

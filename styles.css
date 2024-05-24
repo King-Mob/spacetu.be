@@ -160,6 +160,20 @@ input,
   animation: glow 2s infinite;
 }
 
+button {
+  border: none;
+  color: #272727;
+  background-color: white;
+  font-family: monospace;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+button:hover {
+  background-color: #272727;
+  color: white;
+}
+
 #subscribe {
   margin-top: 0.5rem;
   cursor: pointer;
@@ -192,6 +206,10 @@ li {
   font-size: 1.5rem;
 }
 
+ul {
+  margin-bottom: 0rem;
+}
+
 h2 a {
   font-size: 2rem;
 }
@@ -201,4 +219,10 @@ h2 a {
     width: 80%;
     margin-left: 10%;
   }
+}
+
+#mailing-list-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
