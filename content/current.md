@@ -1,18 +1,18 @@
 # Current Matrix User
 
-Spacetube assumes you have a group that uses matrix and you want to talk to another group that uses matrix.
+Spacetube assumes you have a group, you want to talk to another group and you already know one person (your contact) in that other group.
 
-You're going to use spacetube to send messages back and forth from your group to another.
+This page shows you how to set up a spacetube to send messages back and forth from your group to your contact's group.
 
 ## Simple Set-Up
 
 There are 3 steps to using space tube:
 
-Create your group user.
-Connect to another group.
-Send messages.
+### 1. Create your group user.
+### 2. Connect to another group.
+### 3. Send messages.
 
-All 3 steps can be done either on the spacetube web app ([spacetube.spacetu.be](spacetube.spacetu.be) is the default instance) or through matrix ([app.element.io](app.element.io) if you're coming from the [previous doc](./new.html)). You can also switch from one to the other later on, so don't worry about being locked in to one approach.
+All 3 steps can be done either on the spacetube web app ([spacetube.spacetu.be](spacetube.spacetu.be) is the default instance) or through a matrix client ([app.element.io](app.element.io) if you're coming from the [previous doc](./new.html)). You can also switch from one to the other later on, so don't worry about being locked in to one approach.
 
 The [web instructions](./current.html#spacetubewebapp) are first and then the [matrix instructions](./current.html#matrixclient) are below.
 
@@ -112,7 +112,7 @@ The message will show up in your chat and theirs as being from your group.
 
 ### Going from matrix client to web
 
-1. Send `@my-group link` to get a link to the web app ![request group link](./content/images/matrix-12.jpg)
+1. Send `@my-group web` to get a link to the web app ![request group link](./content/images/matrix-12.jpg)
 2. Click the link
 
 You're in.

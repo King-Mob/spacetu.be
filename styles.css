@@ -129,13 +129,13 @@ body {
 }
 
 #centre h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: monospace;
   margin-top: 0rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: monospace;
   margin-top: 0rem;
 }
@@ -211,7 +211,7 @@ ul {
 }
 
 h2 a {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 600px) {

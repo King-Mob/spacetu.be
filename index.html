@@ -61,6 +61,7 @@
             const result = await emailResponse.json();
 
             if (result.success) {
+                emailInput.value = "";
                 const joined = document.getElementById("joined");
                 joined.style.display = "block";
             }
@@ -101,15 +102,14 @@
                  <p><a href="./magician.html">Matrix Magicians</a> (self-hosting and more)</p>
           </li>-->
         </ul>
-        <h2>Join the mailing list:</h2>
+        <h2>Get in touch:</h2>
         <div id="mailing-list-container">
             <input type="text" placeholder="email address" id="email-input"></input>
-            <button onclick="joinEmailList()">Join</button>
+            <button onclick="joinEmailList()">Share</button>
         </div>
-        <p id="joined" style="display: none;">joined list.</p>
+        <p id="joined" style="display: none;">Email address shared</p>
         <br />
         <p id="join">Talk <a href="https://matrix.to/#/#spacetube-public:spacetu.be">on Matrix</a></p>
-
     </div>
 </body>
 
