@@ -12,7 +12,7 @@ There are 3 steps to using space tube:
 ### 2. Connect to another group.
 ### 3. Send messages.
 
-All 3 steps can be done either on the spacetube web app ([spacetube.spacetu.be](spacetube.spacetu.be) is the default instance) or through a matrix client ([app.element.io](app.element.io) if you're coming from the [previous doc](./new.html)). You can also switch from one to the other later on, so don't worry about being locked in to one approach.
+All 3 steps can be done either on the spacetube web app ([spacetube.spacetu.be](spacetube.spacetu.be) is the default instance) or through a matrix client ([app.element.io](//app.element.io) if you're coming from the [previous doc](./new.html)). You can also switch from one to the other later on, so don't worry about being locked in to one approach.
 
 The [web instructions](./current.html#spacetubewebapp) are first and then the [matrix instructions](./current.html#matrixclient) are below.
 
