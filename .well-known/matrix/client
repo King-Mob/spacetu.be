@@ -1,4 +1,15 @@
 {
+    "cc.etke.ketesa": {
+        "asManagedUsers": [
+            "^@whatsappbot:spacetu\\.be$",
+            "^@whatsapp_[0-9]+:spacetu\\.be$"
+        ],
+        "corsCredentials": "same-origin",
+        "externalAuthProvider": false,
+        "menu": [],
+        "restrictBaseUrl": "https://matrix.spacetu.be",
+        "wellKnownDiscovery": true
+    },
     "m.homeserver": {
         "base_url": "https://matrix.spacetu.be"
     }
